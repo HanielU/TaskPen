@@ -1,0 +1,6 @@
+{
+	"appId": "com.taskpen.app",
+	"appName": "TaskPen",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
