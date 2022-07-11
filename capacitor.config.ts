@@ -1,10 +1,15 @@
+/// <reference types="@capacitor/splash-screen" />
+
 import { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
   appId: "com.taskpen.app",
   appName: "TaskPen",
   webDir: "build",
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
+  plugins: {
+    SplashScreen: {}
+  }
 
   // remove when building for production
   // ,server: {

@@ -2,5 +2,8 @@
 	"appId": "com.taskpen.app",
 	"appName": "TaskPen",
 	"webDir": "build",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": false,
+	"plugins": {
+		"SplashScreen": {}
+	}
 }

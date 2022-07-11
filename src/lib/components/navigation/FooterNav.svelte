@@ -8,6 +8,7 @@
   import CheckboxIcon from "../icons/CheckboxIcon.svelte";
   import HomeIcon from "../icons/HomeIcon.svelte";
   import UserIcon from "../icons/UserIcon.svelte";
+  import Link from "./Link.svelte";
 
   const footerHeight = getContext<Writable<number>>("footer-height");
 
@@ -35,8 +36,8 @@
         {@const current =
           path !== "/" ? $page.url.pathname.startsWith(path) : path === $page.url.pathname}
         <li>
-          <a
-            href={path}
+          <Link
+            to={path}
             class={classNames("px-2 flex py-8", { "border border-solid": showBorders })}
           >
             <svelte:component
@@ -47,7 +48,7 @@
                 "fill-muted": !current
               })}
             />
-          </a>
+          </Link>
         </li>
       {/each}
     </ul>
